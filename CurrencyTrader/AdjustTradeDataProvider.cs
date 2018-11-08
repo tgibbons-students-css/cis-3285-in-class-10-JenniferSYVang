@@ -23,8 +23,7 @@ namespace CurrencyTrader
         public IEnumerable<string> GetTradeData()
         {
             var tradeData = new List<String>();
-            IEnumerable<string> inTradeData;
-            inTradeData = urlProvider.GetTradeData();
+            IEnumerable<string> inTradeData = urlProvider.GetTradeData();
 
             foreach(string line in inTradeData)
             {
